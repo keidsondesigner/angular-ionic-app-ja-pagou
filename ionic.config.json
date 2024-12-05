@@ -1,0 +1,7 @@
+{
+  "name": "app-ja-pagou",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
