@@ -29,6 +29,7 @@ import { NotificationService } from '../../services/notification.service';
           <ion-input
             [(ngModel)]="name"
             name="name"
+            inputmode="text"
             placeholder="Digite o nome da conta"
             required
             class="custom-input"
@@ -40,6 +41,7 @@ import { NotificationService } from '../../services/notification.service';
           <ion-input
             [(ngModel)]="amount"
             name="amount"
+            inputmode="numeric"
             placeholder="0"
             (ionInput)="handleAmountChange($event)"
             required

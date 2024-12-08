@@ -286,7 +286,7 @@ import { BillService } from '../../services/bill.service';
 
       ion-note {
         // flex: 1;
-        min-width: 120px;
+        min-width: 110px;
       }
       
       &::ng-deep {
