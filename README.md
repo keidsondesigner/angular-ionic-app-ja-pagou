@@ -32,8 +32,6 @@ npm install @capacitor/core @capacitor/cli
 npm install @capacitor/android @capacitor/ios
 ```
 
-## Comandos Úteis
-
 ### Desenvolvimento
 
 ```bash
