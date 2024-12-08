@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
   standalone: true,
-  imports: [IonApp, IonRouterOutlet],
+  imports: [IonicModule, CommonModule],
+  template: `
+    <ion-app>
+      <ion-router-outlet></ion-router-outlet>
+    </ion-app>
+  `
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {
+    // Força o tema light
+    document.body.classList.remove('dark');
+    document.body.classList.add('light');
+    document.documentElement.style.setProperty('color-scheme', 'light');
+  }
 }
