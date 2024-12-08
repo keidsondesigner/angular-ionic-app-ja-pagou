@@ -46,28 +46,20 @@ ionic build --prod
 ### Desenvolvimento Live Reload emulador
 
 ```bash
-# Executar no emulador Android
-ionic capacitor run android -l --external
-
-```
-
-### Capacitor
-
-```bash
-# Adicionar plataforma Android
+# 1. Adicionar plataforma Android
 ionic capacitor add android
 
-# Copiar arquivos web para as plataformas nativas
-ionic capacitor copy
+# 2. Copiar arquivos web para as plataformas nativas
+ionic capacitor copy android
 
-# Sincronizar plugins e dependências
-ionic capacitor sync
+# 3. Sincronizar plugins e dependências
+ionic capacitor sync android
 
-# Abrir projeto no Android Studio
+# 4. Executar no Android
+ionic capacitor run android -l --external
+
+# 5. Abrir projeto no Android Studio
 ionic capacitor open android
-
-# Executar no Android
-ionic capacitor run android
 
 ```
 
