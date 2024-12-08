@@ -71,7 +71,7 @@ ionic capacitor run android
 
 ```
 
-## Permissões do Android
+## Adicionar .xml de Permissões do Android para Notificação
 
 O arquivo AndroidManifest.xml contém as seguintes permissões necessárias:
 
