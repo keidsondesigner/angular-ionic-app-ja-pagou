@@ -5,7 +5,8 @@
 A ideia de criar o "Já Pagou?" foi a atender a necessidade do meu pai, um senhor com mais de 60 anos, que precisava lembrar a data de pagamento de alguma fatura, ele sempre deixava passar um ou dois dias, as vezes mais e então pagava com juros, isso o frustava muito, então perguntei para ele "pai, se você tivesse um aplicativo que te lembra-se do vencimento de uma conta, ajudaria?", "com certezaaa... e eu me livraria do meu caderninho kkk" 
 
 ## Requisitos do Sistema
-
+- Java JDK (versão 11 ou superior)
+- Android Studio (versão 2023 ou superior)
 - Node.js (versão 18.x ou superior)
 - npm (versão 8.x ou superior)
 - Git
