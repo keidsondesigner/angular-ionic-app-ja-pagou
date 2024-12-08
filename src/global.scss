@@ -25,13 +25,168 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
-/**
- * Ionic Dark Mode
- * -----------------------------------------------------
- * For more info, please see:
- * https://ionicframework.com/docs/theming/dark-mode
- */
+/* Forçar tema light globalmente */
+html, body {
+  color-scheme: light !important;
+  -webkit-color-scheme: light !important;
+  -moz-color-scheme: light !important;
+}
 
-/* @import "@ionic/angular/css/palettes/dark.always.css"; */
-/* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';
+/* Desabilitar completamente o tema escuro */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    color-scheme: light !important;
+    -webkit-color-scheme: light !important;
+    -moz-color-scheme: light !important;
+  }
+}
+
+
+/* Forçar tema light para todos os componentes Ionic */
+ion-content,
+ion-modal,
+ion-datetime,
+ion-datetime-button,
+ion-input,
+ion-textarea,
+ion-item {
+  color-scheme: light !important;
+  -webkit-color-scheme: light !important;
+  -moz-color-scheme: light !important;
+}
+
+/* Estilos globais para o tema light */
+:root {
+  --ion-color-scheme: light !important;
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244,245,248;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0,0,0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+
+  --ion-background-color: #f4f5f8;
+}
+
+/* Estilos personalizados para alertas no tema light */
+.light-alert {
+  --background: var(--ion-color-light);
+  --backdrop-opacity: 0.5;
+
+  .alert-wrapper {
+    background: var(--ion-color-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .alert-title {
+    color: var(--ion-color-dark);
+    font-weight: 600;
+  }
+
+  .alert-message {
+    color: var(--ion-color-medium);
+  }
+
+  .alert-button-group {
+    justify-content: space-between;
+  }
+
+  .alert-button-cancel {
+    color: var(--ion-color-medium);
+    font-weight: 500;
+  }
+
+  .alert-button-confirm {
+    color: var(--ion-color-danger);
+    font-weight: 600;
+  }
+}
+
+/* Estilos para o action sheet do seletor de mês */
+.select-month-action-sheet {
+  --background: var(--ion-color-light) !important;
+  
+  .action-sheet-group {
+    background: var(--ion-color-light);
+  }
+
+  .action-sheet-title {
+    color: var(--ion-color-dark);
+  }
+
+  .action-sheet-button {
+    color: var(--ion-color-dark);
+    
+    &:hover {
+      background: var(--ion-color-light-shade);
+    }
+  }
+
+  .action-sheet-selected {
+    color: var(--ion-color-primary);
+    font-weight: bold;
+  }
+
+  .action-sheet-cancel {
+    background: var(--ion-color-light);
+    color: var(--ion-color-medium);
+    
+    &:hover {
+      background: var(--ion-color-light-shade);
+    }
+  }
+}
+
+/* Força o tema light em todos os overlays */
+ion-action-sheet.select-month-action-sheet {
+  --backdrop-opacity: 0.6;
+  
+  .action-sheet-wrapper {
+    background: var(--ion-color-light);
+  }
+
+  .action-sheet-group {
+    background: var(--ion-color-light);
+    
+    &:first-of-type {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    
+    &:last-of-type {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  .action-sheet-button {
+    background: var(--ion-color-light);
+    color: var(--ion-color-dark);
+    
+    .action-sheet-button-inner {
+      justify-content: center;
+    }
+  }
+}
+
+/* Força o tema light em todos os overlays do iOS */
+.ios {
+  ion-action-sheet.select-month-action-sheet {
+    .action-sheet-group {
+      border-radius: 13px;
+      margin: 8px;
+    }
+  }
+}
+
+/* Forçar tema light para todos os componentes Ionic */
+ion-datetime-button {
+  --background: #f9f9f9 !important; /* Cor de fundo clara */
+  --color: #000 !important; /* Cor do texto */
+  --ion-color-base: #f9f9f9 !important; /* Cor de fundo base */
+  --ion-color-contrast: #000 !important; /* Cor do texto contrastante */
+  --ion-color-shade: #e0e0e0 !important; /* Sombra clara */
+  --ion-color-tint: #ffffff !important; /* Tom claro */
+}
