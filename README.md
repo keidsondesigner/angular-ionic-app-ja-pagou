@@ -1,6 +1,8 @@
-# App Já Pagou
+# 📱 App Já Pagou?
+<img src="https://i.imgur.com/PNcKQi2.png" title="source: imgur.com" />
 
-Um aplicativo para lembrar de pagar as contas em dia.
+> Como surgiu a ideia?  <br>
+A ideia de criar o "Já Pagou?" foi a atender a necessidade do meu pai, um senhor com mais de 60 anos, que precisava lembrar a data de pagamento de alguma fatura, ele sempre deixava passar um ou dois dias, as vezes mais e então pagava com juros, isso o frustava muito, então perguntei para ele "pai, se você tivesse um aplicativo que te lembra-se do vencimento de uma conta, ajudaria?", "com certezaaa... e eu me livraria do meu caderninho kkk" 
 
 ## Requisitos do Sistema
 
