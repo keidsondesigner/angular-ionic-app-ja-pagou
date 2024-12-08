@@ -63,6 +63,9 @@ ionic capacitor open android
 ```
 
 ## Adicionar .xml de Permissões do Android para Notificação
+[AndroidManifest.xml](android/app/src/main/AndroidManifest.xml)
+
+android\app\src\main\AndroidManifest.xml
 
 O arquivo AndroidManifest.xml contém as seguintes permissões necessárias:
 
@@ -77,9 +80,6 @@ O arquivo AndroidManifest.xml contém as seguintes permissões necessárias:
 - USE_EXACT_ALARM
 - USE_FULL_SCREEN_INTENT
 
-[AndroidManifest.xml](android/app/src/main/AndroidManifest.xml)
-
-android\app\src\main\AndroidManifest.xml
 
 ```xml
 <?xml version='1.0' encoding='utf-8'?>
